@@ -1,6 +1,6 @@
-MobileGlues
+About
 ====
-Please see [MobileGlues](https://github.com/MobileGL-Dev/MobileGlues) and [MobileGlues-release](https://github.com/MobileGL-Dev/MobileGlues-release) to get more information.
+A fork built from fixed-pipeline-emu
 
 License
 ====
