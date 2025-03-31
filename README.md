@@ -2,6 +2,10 @@ About
 ====
 A fork built from fixed-pipeline-emu
 
+MobileGlues
+ ====
+ Please see [MobileGlues](https://github.com/MobileGL-Dev/MobileGlues) and [MobileGlues-release](https://github.com/MobileGL-Dev/MobileGlues-release) to get more information.
+ 
 License
 ====
 MobileGlues is licensed under **GNU LGPL-2.1 License**.
