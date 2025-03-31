@@ -47,9 +47,14 @@ jobs:
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-
-      - name: Upload apk
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ env.repository_name }}_${{ env.date_today }}_${{ github.sha }}
-          path: app/build/outputs/apk/release/
+    - name: Set TAG_NAME
+      run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+    
+    - name: Upload APK
+      uses: softprops/action-gh-release@v2.2.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        prerelease: true
+        tag_name: ${{ env.TAG_NAME }}
+        files: app/build/outputs/apk/release
