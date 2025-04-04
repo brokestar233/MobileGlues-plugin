@@ -57,7 +57,7 @@ android {
             manifestPlaceholders["pojavEnv"] = mutableMapOf<String,String>().apply {
                 put("LIBGL_ES", "3")
                 put("DLOPEN", "libspirv-cross-c-shared.so,libshaderconv.so")
-                put("POJAV_RENDERER", "opengles3")
+                put("POJAV_RENDERER", "opengles3_mobileglues")
             }.run {
                 var env = ""
                 forEach { (key, value) ->
