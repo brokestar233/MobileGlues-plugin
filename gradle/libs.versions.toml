@@ -16,7 +16,7 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "ext-junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "ext-junit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
